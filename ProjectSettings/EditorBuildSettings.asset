@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Nyela_Scene.unity
+    guid: e5bbbc71c7cb4fb42862330352df5665
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Game_Over_Scene.unity
+    guid: 956d4d51fe5c18742ae98dcd48ad03c5
   m_configObjects: {}
