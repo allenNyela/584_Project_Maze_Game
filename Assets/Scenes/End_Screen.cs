@@ -15,8 +15,9 @@ public class End_Screen : MonoBehaviour
     {
         timer = Time.time + 15.0f;
 
-        float a = PlayerPrefs.GetFloat("Player Time");
-        thePlayerTime.GetComponent<TextMeshProUGUI>().text = a.ToString();
+        float playerTimeFloat = PlayerPrefs.GetFloat("Player Time");
+        int playerTimeInt = (int)System.Math.Round(playerTimeFloat);
+        thePlayerTime.GetComponent<TextMeshProUGUI>().text = playerTimeInt.ToString();
     }
 
     private void Update()
