@@ -867,6 +867,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key_1: {fileID: 1022520085}
   key_2: {fileID: 360854912}
+  exit: {fileID: 345529011}
 --- !u!1 &345529011
 GameObject:
   m_ObjectHideFlags: 0

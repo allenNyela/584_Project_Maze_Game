@@ -10,11 +10,14 @@ public class Player_Interact : MonoBehaviour
     private GameObject key_1;
     [SerializeField]
     private GameObject key_2;
+    [SerializeField]
+    private GameObject exit;
 
     // Start is called before the first frame update
     void Start()
     {
         hasKey = false;
+        exit.SetActive(false);
     }
 
     // Update is called once per frame
@@ -34,6 +37,8 @@ public class Player_Interact : MonoBehaviour
             if (collision.gameObject.tag == "Key_2") {
                 key_2.SetActive(false);
             }
+
+            exit.SetActive(true);
             
         }
 
