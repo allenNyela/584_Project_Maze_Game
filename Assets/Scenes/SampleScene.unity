@@ -180,7 +180,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.71, y: 0.69}
+  m_Size: {x: 0.71, y: 0.66}
   m_EdgeRadius: 0
 --- !u!212 &57710573
 SpriteRenderer:
@@ -291,7 +291,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.71, y: 0.69}
+  m_Size: {x: 0.71, y: 0.66}
   m_EdgeRadius: 0
 --- !u!212 &112001685
 SpriteRenderer:
@@ -600,7 +600,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.71, y: 0.69}
+  m_Size: {x: 0.68, y: 0.66}
   m_EdgeRadius: 0
 --- !u!212 &255162926
 SpriteRenderer:
@@ -670,6 +670,7 @@ GameObject:
   - component: {fileID: 260654317}
   - component: {fileID: 260654316}
   - component: {fileID: 260654318}
+  - component: {fileID: 260654322}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -852,6 +853,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &260654322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260654313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b37a769ff3d504f9de14a72a478e12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key_1: {fileID: 1022520085}
+  key_2: {fileID: 360854912}
 --- !u!1 &345529011
 GameObject:
   m_ObjectHideFlags: 0
@@ -865,7 +880,7 @@ GameObject:
   - component: {fileID: 345529013}
   m_Layer: 0
   m_Name: Exit
-  m_TagString: Untagged
+  m_TagString: Exit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1087,7 +1102,7 @@ GameObject:
   - component: {fileID: 360854914}
   m_Layer: 0
   m_Name: Key_Piece (1)
-  m_TagString: Untagged
+  m_TagString: Key_2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1659,7 +1674,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.71, y: 0.69}
+  m_Size: {x: 0.71, y: 0.67}
   m_EdgeRadius: 0
 --- !u!212 &732506915
 SpriteRenderer:
@@ -2393,7 +2408,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.71, y: 0.69}
+  m_Size: {x: 0.71, y: 0.66}
   m_EdgeRadius: 0
 --- !u!212 &928754348
 SpriteRenderer:
@@ -2605,7 +2620,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.71, y: 0.69}
+  m_Size: {x: 0.71, y: 0.66}
   m_EdgeRadius: 0
 --- !u!212 &957086289
 SpriteRenderer:
@@ -2926,7 +2941,7 @@ GameObject:
   - component: {fileID: 1022520087}
   m_Layer: 0
   m_Name: Key_Piece
-  m_TagString: Untagged
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3081,7 +3096,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.71, y: 0.69}
+  m_Size: {x: 0.71, y: 0.66}
   m_EdgeRadius: 0
 --- !u!212 &1053025726
 SpriteRenderer:
@@ -3858,7 +3873,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.71, y: 0.69}
+  m_Size: {x: 0.71, y: 0.66}
   m_EdgeRadius: 0
 --- !u!212 &1305784551
 SpriteRenderer:
@@ -4349,7 +4364,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.71, y: 0.69}
+  m_Size: {x: 0.71, y: 0.66}
   m_EdgeRadius: 0
 --- !u!212 &1604402236
 SpriteRenderer:
@@ -4460,7 +4475,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.71, y: 0.69}
+  m_Size: {x: 0.71, y: 0.67}
   m_EdgeRadius: 0
 --- !u!212 &1633829072
 SpriteRenderer:
@@ -4571,7 +4586,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.71, y: 0.69}
+  m_Size: {x: 0.71, y: 0.66}
   m_EdgeRadius: 0
 --- !u!212 &1762946002
 SpriteRenderer:

@@ -13,7 +13,7 @@ public class End_Screen : MonoBehaviour
  
     void Start()
     {
-        timer = Time.time + 15.0f;
+        timer = Time.time + 8.0f;
 
         float playerTimeFloat = PlayerPrefs.GetFloat("Player Time");
         int playerTimeInt = (int)System.Math.Round(playerTimeFloat);

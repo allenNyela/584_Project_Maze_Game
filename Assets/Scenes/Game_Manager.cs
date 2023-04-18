@@ -10,7 +10,7 @@ public class Game_Manager : MonoBehaviour
 
     // game timers
     [SerializeField]
-    private float gameTimer = 10;
+    private float gameTimer = 180;
 
     [SerializeField]
     public GameObject theTimer;
@@ -30,7 +30,7 @@ public class Game_Manager : MonoBehaviour
     {
         int a = (int)System.Math.Round(gameTimer - Time.time);
         theTimer.GetComponent<TextMeshProUGUI>().text = a.ToString();
-        PlayerPrefs.SetFloat("Player Time", gameTimer);
+        PlayerPrefs.SetFloat("Player Time", Time.time);
 
         if (Time.time > gameTimer)
         {
