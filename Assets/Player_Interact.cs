@@ -12,6 +12,10 @@ public class Player_Interact : MonoBehaviour
     private GameObject key_2;
     [SerializeField]
     private GameObject exit;
+    [SerializeField]
+    private GameObject enemy;
+    [SerializeField]
+    private GameObject enemy_2;
 
     // Start is called before the first frame update
     void Start()
@@ -55,6 +59,11 @@ public class Player_Interact : MonoBehaviour
             if (hasKey == 2) {
                 SceneManager.LoadScene(2);
             }
+        }
+
+        if (collision.gameObject.tag == "Enemy")
+        {
+            SceneManager.LoadScene(3);
         }
     }
 }

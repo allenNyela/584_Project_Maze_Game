@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game_Over_Scene.unity
     guid: 956d4d51fe5c18742ae98dcd48ad03c5
+  - enabled: 1
+    path: Assets/Scenes/Game_Over_Enemy_Defeated.unity
+    guid: d863ac693a7fc084aa18cafbfafcc208
   m_configObjects: {}

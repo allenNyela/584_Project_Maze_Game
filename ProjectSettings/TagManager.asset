@@ -9,6 +9,8 @@ TagManager:
   - Exit
   - Ground
   - Obstacle
+  - Boundary
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -18,7 +20,7 @@ TagManager:
   - UI
   - Ground
   - Obstacle
-  - 
+  - Boundary
   - 
   - 
   - 
