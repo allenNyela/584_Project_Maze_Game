@@ -7,6 +7,8 @@ TagManager:
   - Key
   - Key_2
   - Exit
+  - Ground
+  - Obstacle
   layers:
   - Default
   - TransparentFX
@@ -14,8 +16,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Ground
+  - Obstacle
   - 
   - 
   - 
