@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Player_Interact : MonoBehaviour
 {
-    private bool hasKey;
+    private int hasKey;
     [SerializeField]
     private GameObject key_1;
     [SerializeField]
@@ -16,7 +16,7 @@ public class Player_Interact : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        hasKey = false;
+        hasKey = 0;
         exit.SetActive(false);
     }
 
@@ -28,23 +28,31 @@ public class Player_Interact : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Key" || collision.gameObject.tag == "Key_2")
+        if (collision.gameObject.tag == "Key")
         {
-            hasKey = true;
+            hasKey++;
             if (collision.gameObject.tag == "Key") {
                 key_1.SetActive(false);
             }
+            
+        }
+
+        if (collision.gameObject.tag == "Key_2")
+        {
+            hasKey++;
             if (collision.gameObject.tag == "Key_2") {
                 key_2.SetActive(false);
             }
-
-            exit.SetActive(true);
             
+        }
+
+        if (hasKey == 2) {
+            exit.SetActive(true);
         }
 
         if (collision.gameObject.tag == "Exit")
         {
-            if (hasKey == true) {
+            if (hasKey == 2) {
                 SceneManager.LoadScene(2);
             }
         }
